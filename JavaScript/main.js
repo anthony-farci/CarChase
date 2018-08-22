@@ -1,11 +1,11 @@
 
-let car = new Car(0);
+let car = new Car();
 function pressKeyCode(event){
-    if(event.keyCode == 37){
-       car.move(-20);
-    }else if(event.keyCode == 39){
-        car.move(20);
-    }
-    car.display();
+        if(event.keyCode == 37){
+           car.move(-10);
+        }else if(event.keyCode == 39 ){
+            car.move(10);
+        }
+        car.display();
 }
 
