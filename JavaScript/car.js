@@ -29,17 +29,17 @@ class Car{
     
     move(deplacement){
         if(this.hitLeftLimit()){
-            this.posX = ($('#road').offset().left + 250+50);
+            this.posX = ($('#road').offset().left);
         }else if(this.hitRightLimit()){
-            this.posX = ($('#road').offset().left + 1000 - 250 - 50);
+            this.posX = ($('#road').offset().left + $('#road').width()-100);
         }else{
             this.posX += deplacement;
         }
     }
     hitLeftLimit(){
-        return this._posX < ($('#road').offset().left + 250 + 50);
+        return this._posX < ($('#road').offset().left);
     }
     hitRightLimit(){
-        return this._posX > ($('#road').offset().left + 1000 - 250 - 50)
+        return this._posX > ($('#road').offset().left + $('#road').width() - 100);
     }
 }
