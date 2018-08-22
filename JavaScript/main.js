@@ -1,5 +1,6 @@
-let posCar = $('#road').width()/2 - 50 + $('#road').offset().left
-let car = new Car(posCar, 0);
+let posX = $('#road').width()/2 - 50 + $('#road').offset().left;
+let posY = $('#road').offset().top + $('#road').height() - 200;
+let car = new Car(posX, posY);
 
 function pressKeyCode(event){
         if(event.keyCode == 37){
