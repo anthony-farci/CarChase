@@ -5,7 +5,7 @@ body {
 #road {
     display : block;
     margin : auto;
-    background-image: url("image/road.jpg");
+    background-image: url("../images/road.jpg");
     background-repeat: repeat-y;
     background-size: cover;
     background-position : 0px 0px;
