@@ -1,0 +1,30 @@
+body {
+    background: black;
+}
+
+#road {
+    display : block;
+    margin : auto;
+    background-image: url("image/road.png");
+    background-repeat: repeat-y;
+    background-size: 500px 1000px;
+    background-position : 250px 0px;
+    border : 2px solid white;
+    z-index: 1;
+}
+
+  #road {
+    animation-duration: 3s;
+    animation-name: roadSlide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes roadSlide {
+     from {
+      background-position : 250px 0px;
+    }
+    to {
+     background-position : 250px 400px;
+    }
+  }
