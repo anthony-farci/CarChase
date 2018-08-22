@@ -1,5 +1,6 @@
+let posCar = $('#road').width()/2 - 50 + $('#road').offset().left
+let car = new Car(posCar, 0);
 
-let car = new Car(0);
 function pressKeyCode(event){
     if(event.keyCode == 37){
        car.move(-20);
@@ -8,4 +9,12 @@ function pressKeyCode(event){
     }
     car.display();
 }
+
+function makeOpponentSpawn() {
+    let posX;
+    let posY;
+    let opponent = new Car()
+}
+
+car.display();
 
