@@ -23,7 +23,8 @@ class Car{
         $('#car').attr('src', this._image);
         car.style.position = "absolute";
         car.style.bottom = $('#road').offset().top + 50 + "px";
-        car.style.left = this.posX+"px";
+        car.style.top = this._posY + "px";
+        car.style.left = this.posX + "px";
     }
     
     move(deplacement){
