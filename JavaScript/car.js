@@ -21,7 +21,18 @@ class Car{
     }
     
     move(deplacement){
-        this.posX += deplacement; 
+        if(this.hitLeftLimit()){
+            this.posX = ($('#road').offset().left + 250+50);
+        }else if(this.hitRightLimit()){
+            this.posX = ($('#road').offset().left + 1000 - 250 - 50);
+        }else{
+            this.posX += deplacement;
+        }
     }
-    
+    hitLeftLimit(){
+        return this._posX < ($('#road').offset().left + 250 + 50);
+    }
+    hitRightLimit(){
+        return this._posX > ($('#road').offset().left + 1000 - 250 - 50)
+    }
 }
