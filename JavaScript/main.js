@@ -2,12 +2,12 @@ let posCar = $('#road').width()/2 - 50 + $('#road').offset().left
 let car = new Car(posCar, 0);
 
 function pressKeyCode(event){
-    if(event.keyCode == 37){
-       car.move(-20);
-    }else if(event.keyCode == 39){
-        car.move(20);
-    }
-    car.display();
+        if(event.keyCode == 37){
+           car.move(-10);
+        }else if(event.keyCode == 39 ){
+            car.move(10);
+        }
+        car.display();
 }
 
 function makeOpponentSpawn() {
